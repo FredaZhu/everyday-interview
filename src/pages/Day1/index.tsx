@@ -63,24 +63,24 @@ export default function() {
         <p>3) 还是使用额外的div，flex写法更简洁：.container: display: flex; .center: flex: 1; 
           .left: flex: 0 0 200px; order: -1; .right: flex: 0 0 150px;
         </p>
-        <h4>2) BFC布局的实现原理，并用代码实现；</h4>
-        <h4>3）解释盒模型。</h4>
-      </div>
-      <div>
-        <h3>[js]:</h3>
-        <h4>1) 说说你对javascript的作用域的理解。</h4>
       </div>
       <div>
         <h3>[git]:</h3>
         <h4>1) 怎么把多个commit合并？</h4>
-      </div>
-      <div>
-        <h3>[算法]:</h3>
-        <h4>1) 用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值</h4>
-      </div>
-      <div>
-        <h3>[软技能]:</h3>
-        <h4>1) 网页应用从服务器主动推送到客户端有那些方式？</h4>
+        <p>答：先用git log查看commit信息，然后用git rebase -i HEAD~[最近提交的要合并的commit数]，
+          执行命令后终端会输出信息，根据信息提示：
+          <ul>
+            <li>pick：保留该commit（缩写:p）</li>
+            <li>reword：保留该commit，但我需要修改该commit的注释（缩写:r）</li>
+            <li>edit：保留该commit, 但我要停下来修改该提交(不仅仅修改注释)（缩写:e）</li>
+            <li>squash：将该commit和前一个commit合并（缩写:s）</li>
+            <li>fixup：将该commit和前一个commit合并，但我不要保留该提交的注释信息（缩写:f）</li>
+            <li>exec：执行shell命令（缩写:x）</li>
+            <li>drop：我要丢弃该commit（缩写:d）</li>
+          </ul>
+          根据以上操作进行修改后，保存退出，git会自动合并提交，并弹出合并提示两次的 commit message, 
+          将这两个修改成新的 commit message，保存后退出即可
+        </p>
       </div>
     </div>
   )

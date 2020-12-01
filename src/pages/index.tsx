@@ -9,6 +9,9 @@ export default function() {
         <li>
           <Link to="/day_1">【Day 1】 2020.11.30</Link>
         </li>
+        <li>
+          <Link to="/day_2">【Day 2】 2020.12.01</Link>
+        </li>
       </ul>
     </div>
   );

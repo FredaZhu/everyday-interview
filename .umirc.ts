@@ -20,6 +20,14 @@ const config: IConfig =  {
         {
           path: '/day_1/doubleFly',
           component: '../pages/Day1/doubleFly.tsx'
+        },
+        {
+          path: '/day_2',
+          component: '../pages/Day2'
+        },
+        {
+          path: '/day_2/back-stage-manage',
+          component: '../pages/Day2/backstageManage.tsx'
         }
       ]
     }
