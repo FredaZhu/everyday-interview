@@ -1,0 +1,49 @@
+/* 由于双飞翼布局没有用到position:relative进行定位，所以最小页面宽度应该为200+150=350px。
+但是当页面宽度缩小到350px附近时，会挤占中间栏的宽度，使得其内容被右侧栏覆盖，因此在设置最小页面宽度时，
+应该适当增加一些宽度以供中间栏使用（假设为150px） */
+body {
+  min-width: 500px;
+}
+
+.doubleFly {
+  font-size: 24px;
+  text-align: center;
+}
+
+.header, .footer {
+  width: 100%;
+  height: 60px;
+  background-color: #999;
+  line-height: 60px;
+}
+
+.container {
+  width: 100%;
+}
+
+.container, .left, .right {
+  float: left;
+  height: 670px;
+}
+
+.center {
+  margin-left: 200px;
+  margin-right: 150px;
+  background-color: cadetblue;
+}
+
+.left {
+  width: 200px;
+  margin-left: -100%;
+  background-color: cornflowerblue;
+}
+
+.right {
+  width: 150px;
+  margin-left: -150px;
+  background-color: darksalmon;
+}
+
+.footer {
+  clear: both;
+}

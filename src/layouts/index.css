@@ -1,0 +1,11 @@
+.container {
+  font-size: 14px;
+}
+
+.container p {
+  color: #74b05e;
+}
+
+.container p span {
+  color: #a92c3f;
+}
